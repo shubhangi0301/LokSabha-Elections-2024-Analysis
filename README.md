@@ -1,82 +1,95 @@
-# Lok Sabha Elections 2024 Analysis 🗳️
+# Lok Sabha Elections 2024 — Data Analysis & Visualization 🗳️
 
-**🔍 Project Summary**  
-This repository presents a polished data analysis pipeline built with **SQL (SSMS)** and **Power BI**, aimed to highlight my analytical proficiency as a data analyst (fresher). It examines the **Lok Sabha 2024** results at both state and constituency levels, focusing on alliance dynamics, vote margins, and seat distribution.
+## 📌 Project Overview
 
----
+This project presents a data-driven analysis of the **2024 Indian General Elections (Lok Sabha)** using **SQL** and **Power BI**. The analysis focuses on constituency-level results, alliance-wise seat distribution, vote margins, and state-wise performance of major political parties and alliances — specifically **NDA**, **I.N.D.I.A**, and Others.
 
-## 🚀 Tech Stack
-
-- **SQL Server Management Studio (SSMS)** — Data cleaning, transformation, feature engineering  
-- **Power BI Desktop** (.pbix) — Visualization, mapping, interactivity  
-- **Files included**:
-  - `SQL Queries.docx` – documentation of all SQL scripts
-  - `.pbix` file – interactive dashboards
-  - Any exported data in CSV/Excel formats (if added)
+The objective is to demonstrate my proficiency in **data analysis using SQL** and **data visualization using Power BI**.
 
 ---
 
-## 📊 SQL Analysis Scripts
+## 🛠 Tools & Technologies
 
-All SQL scripts are documented in `SQL Queries.docx` and cover:
+- **SQL Server Management Studio (SSMS)**  
+  For data extraction, transformation, and analytical querying.
+  
+- **Power BI Desktop**  
+  For building dynamic, interactive dashboards based on SQL outputs.
 
-- **Total seats per state**
-- **Seat counts by alliance**: NDA, INDIA, OTHER
-- **Party-level seat counts** within alliances
-- **Adding `party_alliance`** column and populating it for NDAs, INDIAs, Others
-- **Alliance performance** summary across India and per state
-- **Winner and runner-up** extraction with candidate details and vote margins
-- **EVM vs Postal vote** comparisons
-- **Top EVM vote-getters** per constituency
-- **Candidate breakdown metrics** (e.g., in Maharashtra: seats, votes, number of parties/candidates)
-
-These queries demonstrate:
-- ✅ My ability to design analytical SQL workflows  
-- ✅ Use of aggregations, window functions (`ROW_NUMBER()`), conditional columns, and joins  
-- ✅ Formation of staging tables ready for reporting in Power BI
+- **MS PowerPoint**  
+  For presenting the problem statement, data design, and key findings.
 
 ---
 
-## 📈 Power BI Dashboard Highlights
+## 🎞️ Presentation: Project Walkthrough
 
-The `.pbix` dashboard translates SQL outputs into:
+A PowerPoint file is included in this repository, summarizing the project. It covers:
+- 📍 **Problem Statement**
+- 📑 **Description of each data table**
+- 📊 **Snapshots of Power BI Dashboards**
+- 🎯 **Key business insights and conclusions**
 
-- **Maps**: State-level and constituency-level color-coded by winning alliance or party  
-- **Bar charts and tables**: Seat counts by alliance, top vote winners, margin distributions  
-- **Drill-through** capabilities: Click on a state to explore its constituency-level details  
-- **Tooltips & slicers**: For deep dive into candidates, vote shares, and alliance comparisons
-
----
-
-## 🎯 What You’ll See
-
-- **Alliance performance** visualized at national and state levels  
-- **Seat-sharing breakdown**: NDA vs INDIA vs Others  
-- **Margin analysis**: Identifying close races and blowout wins  
-- **Vote-type insights**: EVM vs Postal votes across geographies  
-- **Candidate rankings**: Top vote-getters and runner-ups per seat/state
+This presentation is intended for quick review by recruiters, stakeholders, or interviewers to understand the motivation, methodology, and outcomes of the project.
 
 ---
 
-## 📁 How to Explore
+## 📄 SQL Analysis (see `SQL Queries.docx`)
 
-1. **Clone this repo**
-2. **SQL**:
-   - Run `.docx` SQL queries in SSMS to create your analysis tables.  
-   - Export results to CSV/XLSX.
-3. **Power BI**:
-   - Open the `.pbix` file in Power BI Desktop.  
-   - Update data sources to point to your exported files.
-   - Interact with the visuals—use slicers for alliances, states, parties.
+The SQL queries in this project were used to generate:
+- Total seat counts (national and per state)
+- Seats won by each political alliance and party
+- State-wise and constituency-wise results
+- Winning vs runner-up candidates and vote margins
+- Alliance classification (`NDA`, `I.N.D.I.A`, `Other`)
+- EVM vs Postal voting distribution
+- Candidate-level vote performance metrics
+
+SQL features demonstrated:
+- `JOIN`, `GROUP BY`, `CASE`, `RANK`, `ROW_NUMBER()`, `CTE`
+- Update and transformation queries (`ALTER`, `UPDATE`)
+- Aggregation and conditional logic
+
+---
+
+## 📊 Power BI Dashboard Highlights
+
+The `.pbix` file provides:
+- **Map Visuals**: Winning alliance by state
+- **Bar Charts**: Seats won by alliance and party
+- **Scatter Plots**: Vote share vs margin by constituency
+- **Slicers**: Filter by alliance, party, or state
+- **Drill-Through Pages**: State-level to constituency-level navigation
+- **Custom Tooltips**: Candidate info, party, margin, and vote breakdowns
 
 ---
 
-## 🧩 Why This Project Defines My Skills
+## 📂 Files Included
 
-- Demonstrates end-to-end **ETL** in SQL  
-- Shows expertise in **data modeling and DAX** for complex measures  
-- Highlights ability to build **insightful visual storytelling**  
-- Emphasizes sensitivity to **political context** and **stakeholder needs**  
-- Reflective of real-world data analyst responsibilities
+- `SQL Queries.docx` — Complete SQL scripts used in analysis
+- `PowerBI Dashboard.pbix` — Power BI dashboard file (if added)
+- `Indian General LS Elections 2024 DA Presentation Deck.pptx` — Slide deck explaining the problem, data, and results
+- CSV Files — Processed data used in Power BI
 
 ---
+
+## 🎓 Skills Demonstrated
+
+- Writing advanced **SQL queries** for data extraction and analysis  
+- Designing and interpreting **Power BI dashboards**  
+- Applying **data storytelling** to real-world political data  
+- Presenting technical work clearly through **visual and slide-based communication**
+
+---
+
+## 🧭 How to Use
+
+1. Open `SQL Queries.docx` and run queries in **SQL Server Management Studio**.
+2. Export results to CSV.
+3. Open the `.pbix` file in **Power BI Desktop** and refresh with the data.
+4. Review the PowerPoint presentation to understand the analysis approach and conclusions.
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License** — feel free to use, modify, or reference it for learning and non-commercial use.
